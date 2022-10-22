@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Roboto+Mono:wght@300&display=swap');
+
 *,
 *::after,
 *::before {
@@ -12,7 +14,7 @@ body {
     display: grid;
     height: 100vh;
     grid-template-rows: 2fr 15fr 1fr ;
-    grid-template-columns: 1fr 20fr 3fr ;
+    grid-template-columns: 2fr 10fr 10fr ;
     gap: 2px;
 }
 
@@ -38,13 +40,30 @@ header {
 nav {
     background-color: red;
     grid-row: 1/4;
-}
-
-.navbar {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: start;
+    align-items: center;
+    list-style: none;
+}
 
+.navbar-menu {
+    padding-top: 15rem;
+    list-style: none;
+    display: flex;
+    flex-flow: column wrap;
+    gap: 15px;
+}
+
+.navbar .logo {
+    padding-top: 5px;
+}
+
+
+.navbar-menu a {
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Roboto Mono', monospace;
 }
 
 main {
@@ -60,7 +79,14 @@ main .sneaker-img {
 
 .home {
     display: flex;
+    font-family: 'Roboto Mono', monospace;
+    font-weight: bold;
+}
 
+.home div {
+    width: 700px;
+    margin: 200px 70px ;
+    font-size: large;
 }
 
 footer {
